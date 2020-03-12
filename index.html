@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">.
+  <meta name="description" content="Putting images this time">
+  <meta name="keywords" content="MHTS, website">
+  <meta name="author" content="David Camargo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>This is annoying</title>
+  </head>
+  
+  <body>
+  
+<button onclick="myFunction1()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction1() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+  
+  <p id="BODY"></p>
+  <button onclick="myFunction2()">Click me carefuly </button>
+  
+  <script>
+
+  function myFunction2() {
+  document.getElementsByTagName("BODY")[0].style.backgroundColor= "blue";
+  }
+ 
+  </script>
+  
+  <button onclick ="document.getElementById('myImage').src='./images/ocean.jpg'"> First Ocean </button>
+ 
+  <img id="myImage" src="./images/ocean.jpg" style="width:500px">
+  
+  <button onclick="document.getElementById('myImage').src='./images/ocean2.jpg'"> Second Ocean </button>
+  </body>
+  
+  
+</html>
